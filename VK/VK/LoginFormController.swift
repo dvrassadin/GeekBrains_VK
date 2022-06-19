@@ -11,14 +11,35 @@ class LoginFormController: UIViewController {
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBAction func signInButton(_ sender: Any) {
-        let username = usernameTextField.text!
-        let password = passwordTextField.text!
+
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let checkoutResult = checkUserData()
+        
+        if !checkoutResult {
+            showLoginError()
+        }
+        return checkoutResult
+    }
+    
+    func checkUserData() -> Bool {
+        guard let username = usernameTextField.text,
+              let password = passwordTextField.text else {return false}
         
         if username == "" && password == "" {
-            print("Succesful authorization")
+            return true
         } else {
-            print("Authorization failed")
+            return false
         }
+    }
+    
+    func showLoginError() {
+        let alert = UIAlertController(title: "Authorization failed", message: "Invalid username and/or password", preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel)
+        alert.addAction(action)
+        present(alert, animated: true)
+        self.passwordTextField.text = ""
     }
     
     @IBOutlet var scrollView: UIScrollView!
