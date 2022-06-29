@@ -10,31 +10,35 @@ import UIKit
 class FriendsViewController: UITableViewController {
     
     var friends = [
-        User(name: "Пётр", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Дарья", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Василий", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Егор", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Анастасия", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Екатерина", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Дмитрий", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Кирилл", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Лорина", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Виктория", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Ирина", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Игорь", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Павел", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Антон", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Иван", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Магомед", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Анна", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Валерия", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Мария", image: UIImage(systemName: "person.crop.rectangle")),
-        User(name: "Арсений", image: UIImage(systemName: "person.crop.rectangle.fill")),
-        User(name: "Прохор", image: UIImage(systemName: "person.crop.rectangle.fill"))
+        User(name: "Пётр", surname: "Иванов", image: UIImage(named: "maleAvatar")),
+        User(name: "Дарья", surname: nil, image: UIImage(named: "femaleAvatar")),
+        User(name: "Василий", surname: "Петров", image: UIImage(named: "maleAvatar")),
+        User(name: "Егор", surname: "Елисеев", image: UIImage(named: "maleAvatar")),
+        User(name: "Анастасия", surname: "Чернова", image: UIImage(named: "femaleAvatar")),
+        User(name: "Екатерина", surname: "Фёдорова", image: UIImage(named: "femaleAvatar")),
+        User(name: "Дмитрий", surname: "Базыкин", image: nil),
+        User(name: "Кирилл", surname: "Криулин", image: UIImage(named: "maleAvatar")),
+        User(name: "Лорина", surname: nil, image: UIImage(named: "femaleAvatar")),
+        User(name: "Виктория", surname: "Иванцова", image: nil),
+        User(name: "Ирина", surname: "Григорова", image: UIImage(named: "femaleAvatar")),
+        User(name: "Игорь", surname: "Галушко", image: UIImage(named: "maleAvatar")),
+        User(name: "Павел", surname: "Тур", image: UIImage(named: "maleAvatar")),
+        User(name: "Антон", surname: "Аринин", image: nil),
+        User(name: "Иван", surname: "Нооль", image: UIImage(named: "maleAvatar")),
+        User(name: "Магомед", surname: "Магомедов", image: UIImage(named: "maleAvatar")),
+        User(name: "Анна", surname: "Данилейко", image: UIImage(named: "femaleAvatar")),
+        User(name: "Валерия", surname: "Чернова", image: UIImage(named: "femaleAvatar")),
+        User(name: "Мария", surname: "Панова", image: UIImage(named: "femaleAvatar")),
+        User(name: "Арсений", surname: nil, image: UIImage(named: "maleAvatar")),
+        User(name: "Прохор", surname: nil, image: UIImage(named: "maleAvatar")),
+        User(name: "Руслан", surname: nil, image: nil),
+        User(name: "Яков", surname: "Отвсяков", image: UIImage(named: "maleAvatar"))
     ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        friends.sort {$0.name < $1.name}
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -58,14 +62,20 @@ class FriendsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath) as! FriendsViewCell
         
-        var content = cell.defaultContentConfiguration()
-        content.text = friends[indexPath.row].name
-        content.image = friends[indexPath.row].image
-
-        cell.contentConfiguration = content
+//        var content = cell.defaultContentConfiguration()
+//        content.text = friends[indexPath.row].name
+//        content.image = friends[indexPath.row].image
         
-//        cell.friendName.text = friends[indexPath.row].name
-//        cell.friendImage.image = friends[indexPath.row].image
+//        cell.contentConfiguration = content
+        
+//        cell.friendImage.layer.cornerRadius = cell.friendImage.layer.bounds.height / 2
+//        cell.friendImageView.layer.cornerRadius = cell.friendImageView.layer.bounds.height / 2
+//        cell.friendImageView.layer.shadowRadius = 4
+//        cell.friendImageView.layer.shadowOpacity = 0.5
+//        cell.friendImageView.layer.shadowOffset = CGSize.zero
+
+        cell.friendName.text = friends[indexPath.row].name + " " + (friends[indexPath.row].surname ?? "")
+        cell.avatarWithShadow.avatarImage.image = friends[indexPath.row].image ?? UIImage(named: "noPhotoDog")
         
         return cell
     }

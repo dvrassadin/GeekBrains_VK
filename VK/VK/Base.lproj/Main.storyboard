@@ -142,33 +142,55 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="42.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8VD-Dh-41r">
-                                            <rect key="frame" x="20" y="6" width="30" height="30.5"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="30" id="Jk8-79-1M1"/>
-                                                <constraint firstAttribute="height" constant="30" id="gke-C9-VcE"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eqn-7V-jF4">
                                             <rect key="frame" x="60" y="11" width="354" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P5T-sc-FuT" customClass="AvatarView" customModule="VK" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="6" width="30" height="30.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJR-Qg-CCi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30.5"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xCp-tM-2lE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30.5"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstItem="RJR-Qg-CCi" firstAttribute="top" secondItem="P5T-sc-FuT" secondAttribute="top" id="5ps-gP-hhF"/>
+                                                <constraint firstAttribute="width" constant="30" id="H6B-IQ-gqf"/>
+                                                <constraint firstAttribute="width" secondItem="P5T-sc-FuT" secondAttribute="height" multiplier="1:1" id="I6g-HX-5JI"/>
+                                                <constraint firstAttribute="bottom" secondItem="RJR-Qg-CCi" secondAttribute="bottom" id="Nd3-rj-2yM"/>
+                                                <constraint firstItem="xCp-tM-2lE" firstAttribute="top" secondItem="P5T-sc-FuT" secondAttribute="top" id="Occ-WL-3NA"/>
+                                                <constraint firstAttribute="trailing" secondItem="xCp-tM-2lE" secondAttribute="trailing" id="XKB-OR-Z4L"/>
+                                                <constraint firstAttribute="bottom" secondItem="xCp-tM-2lE" secondAttribute="bottom" id="gI9-dx-GhM"/>
+                                                <constraint firstItem="xCp-tM-2lE" firstAttribute="leading" secondItem="P5T-sc-FuT" secondAttribute="leading" id="h6U-OY-dxi"/>
+                                                <constraint firstAttribute="trailing" secondItem="RJR-Qg-CCi" secondAttribute="trailing" id="o7c-q2-jzY"/>
+                                                <constraint firstItem="RJR-Qg-CCi" firstAttribute="leading" secondItem="P5T-sc-FuT" secondAttribute="leading" id="tEq-BM-xyW"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="avatarImage" destination="xCp-tM-2lE" id="pie-Gn-feh"/>
+                                                <outlet property="avatarShadow" destination="RJR-Qg-CCi" id="650-V3-aoq"/>
+                                            </connections>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="8VD-Dh-41r" secondAttribute="bottom" constant="6" id="Dj1-jj-dBM"/>
-                                        <constraint firstItem="8VD-Dh-41r" firstAttribute="leading" secondItem="zet-9F-3VX" secondAttribute="leading" constant="20" symbolic="YES" id="O4d-cm-tUk"/>
-                                        <constraint firstItem="8VD-Dh-41r" firstAttribute="centerY" secondItem="zet-9F-3VX" secondAttribute="centerY" id="VcE-yX-LzK"/>
-                                        <constraint firstItem="Eqn-7V-jF4" firstAttribute="centerY" secondItem="8VD-Dh-41r" secondAttribute="centerY" id="hcz-fo-8rV"/>
+                                        <constraint firstItem="P5T-sc-FuT" firstAttribute="leading" secondItem="zet-9F-3VX" secondAttribute="leading" constant="20" symbolic="YES" id="4F2-WX-rF9"/>
+                                        <constraint firstItem="Eqn-7V-jF4" firstAttribute="centerY" secondItem="P5T-sc-FuT" secondAttribute="centerY" id="G55-PM-cRC"/>
+                                        <constraint firstAttribute="bottom" secondItem="P5T-sc-FuT" secondAttribute="bottom" constant="6" id="Q6y-Do-RJp"/>
+                                        <constraint firstItem="Eqn-7V-jF4" firstAttribute="leading" secondItem="P5T-sc-FuT" secondAttribute="trailing" constant="10" id="Ujd-HT-onf"/>
                                         <constraint firstAttribute="trailing" secondItem="Eqn-7V-jF4" secondAttribute="trailing" id="nUu-0N-BuX"/>
-                                        <constraint firstItem="Eqn-7V-jF4" firstAttribute="leading" secondItem="8VD-Dh-41r" secondAttribute="trailing" constant="10" id="yDI-Uc-vrY"/>
-                                        <constraint firstItem="8VD-Dh-41r" firstAttribute="top" secondItem="zet-9F-3VX" secondAttribute="top" constant="6" id="yPL-zd-NHL"/>
+                                        <constraint firstItem="P5T-sc-FuT" firstAttribute="top" secondItem="zet-9F-3VX" secondAttribute="top" constant="6" id="zH0-0x-wns"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="FriendImage" destination="8VD-Dh-41r" id="sg4-Hi-VO4"/>
                                     <outlet property="FriendName" destination="Eqn-7V-jF4" id="q6d-wT-Vfa"/>
+                                    <outlet property="avatarWithShadow" destination="P5T-sc-FuT" id="ESP-LZ-I7Z"/>
+                                    <outlet property="friendName" destination="Eqn-7V-jF4" id="aiR-hF-xcc"/>
                                     <segue destination="XDJ-vd-fSF" kind="show" identifier="showFriendName" id="IbB-hi-juX"/>
                                 </connections>
                             </tableViewCell>
@@ -215,8 +237,29 @@
                                                 <constraint firstAttribute="height" priority="999" constant="100" id="TOi-fC-uwh"/>
                                             </constraints>
                                         </imageView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eh-c0-1ow" customClass="LikeControl" customModule="VK" customModuleProvider="target">
+                                            <rect key="frame" x="85" y="85" width="20" height="20"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rvH-sg-RbI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="5eh-c0-1ow" secondAttribute="height" multiplier="1:1" id="0Tw-8N-j3l"/>
+                                                <constraint firstItem="rvH-sg-RbI" firstAttribute="top" secondItem="5eh-c0-1ow" secondAttribute="top" id="4g4-A7-b80"/>
+                                                <constraint firstAttribute="trailing" secondItem="rvH-sg-RbI" secondAttribute="trailing" id="Nex-ds-Zey"/>
+                                                <constraint firstItem="rvH-sg-RbI" firstAttribute="leading" secondItem="5eh-c0-1ow" secondAttribute="leading" id="SCA-Xg-CcG"/>
+                                                <constraint firstAttribute="bottom" secondItem="rvH-sg-RbI" secondAttribute="bottom" id="YbY-Lu-ZU4"/>
+                                                <constraint firstAttribute="width" constant="20" id="d7L-o2-jZP"/>
+                                            </constraints>
+                                            <connections>
+                                                <outlet property="likeImage" destination="rvH-sg-RbI" id="319-RA-SQ9"/>
+                                            </connections>
+                                        </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="5eh-c0-1ow" secondAttribute="bottom" constant="5" id="4ga-kZ-gCg"/>
+                                        <constraint firstAttribute="trailing" secondItem="5eh-c0-1ow" secondAttribute="trailing" constant="5" id="Emd-B2-cv8"/>
                                         <constraint firstItem="8gT-fq-sOl" firstAttribute="top" secondItem="prP-x4-z03" secondAttribute="top" constant="5" id="PoI-sE-ufR"/>
                                         <constraint firstItem="8gT-fq-sOl" firstAttribute="leading" secondItem="prP-x4-z03" secondAttribute="leading" constant="5" id="jf1-6u-mZ8"/>
                                         <constraint firstAttribute="bottom" secondItem="8gT-fq-sOl" secondAttribute="bottom" constant="5" id="lC0-Oj-icE"/>
@@ -224,6 +267,8 @@
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <connections>
+                                    <outlet property="conteiner" destination="prP-x4-z03" id="GcI-gg-sUq"/>
+                                    <outlet property="likeControl" destination="5eh-c0-1ow" id="cUx-1O-9Cv"/>
                                     <outlet property="photo" destination="8gT-fq-sOl" id="eKh-58-DPP"/>
                                 </connections>
                             </collectionViewCell>
