@@ -13,6 +13,7 @@ class PhotosViewCell: UICollectionViewCell {
     
     @IBOutlet var likeControl: LikeControl!
     @IBOutlet var conteiner: UIView!
+    
         
     override func awakeFromNib() {
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
@@ -30,9 +31,15 @@ class PhotosViewCell: UICollectionViewCell {
         if likeControl.likeStatus {
             likeControl.likeImage.image = UIImage(systemName: "heart.fill")
             likeControl.likeImage.tintColor = .red
+            likeControl.likeCount += 1
+            likeControl.likeCounter.text = String(likeControl.likeCount)
+
         } else {
             likeControl.likeImage.image = UIImage(systemName: "heart")
             likeControl.likeImage.tintColor = .black
-        }        
+            likeControl.likeCount -= 1
+            likeControl.likeCounter.text = String(likeControl.likeCount)
+
+        }
     }
 }

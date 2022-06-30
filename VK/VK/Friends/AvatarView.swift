@@ -7,19 +7,24 @@
 
 import UIKit
 
+
 class AvatarView: UIView {
 
     @IBOutlet var avatarImage: UIImageView!
     @IBOutlet var avatarShadow: UIView!
-    @IBOutlet var likeCounter: UILabel!
+
+    
+    @IBInspectable var shadowColor: UIColor = .black
+    @IBInspectable var shadowOpacity: Float = 0.5
+    @IBInspectable var shadowRadius: CGFloat = 5
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        avatarShadow.layer.shadowColor = UIColor.black.cgColor
-        avatarShadow.layer.shadowOpacity = 0.5
+        avatarShadow.layer.shadowColor = shadowColor.cgColor
+        avatarShadow.layer.shadowOpacity = shadowOpacity
         avatarShadow.layer.shadowOffset = .zero
-        avatarShadow.layer.shadowRadius = 5
+        avatarShadow.layer.shadowRadius = shadowRadius
     }
     
     override func layoutSubviews() {

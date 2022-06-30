@@ -62,18 +62,6 @@ class FriendsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "FriendsCell", for: indexPath) as! FriendsViewCell
         
-//        var content = cell.defaultContentConfiguration()
-//        content.text = friends[indexPath.row].name
-//        content.image = friends[indexPath.row].image
-        
-//        cell.contentConfiguration = content
-        
-//        cell.friendImage.layer.cornerRadius = cell.friendImage.layer.bounds.height / 2
-//        cell.friendImageView.layer.cornerRadius = cell.friendImageView.layer.bounds.height / 2
-//        cell.friendImageView.layer.shadowRadius = 4
-//        cell.friendImageView.layer.shadowOpacity = 0.5
-//        cell.friendImageView.layer.shadowOffset = CGSize.zero
-
         cell.friendName.text = friends[indexPath.row].name + " " + (friends[indexPath.row].surname ?? "")
         cell.avatarWithShadow.avatarImage.image = friends[indexPath.row].image ?? UIImage(named: "noPhotoDog")
         
@@ -84,7 +72,7 @@ class FriendsViewController: UITableViewController {
         if segue.identifier == "showFriendName",
            let destinationVC = segue.destination as? PhotosViewController,
            let indexPath = tableView.indexPathForSelectedRow {
-            let selectedName = friends[indexPath.row].name
+            let selectedName = friends[indexPath.row].name + " " + (friends[indexPath.row].surname ?? "")
             destinationVC.title = selectedName
         }
     }
