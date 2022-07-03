@@ -50,5 +50,128 @@
             endingLineNumber = "27">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VK/Friends/FriendsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "FriendsViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D - 60536d5ba15477cf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FriendsViewController.sortedFriends.getter : Swift.Dictionary&lt;Swift.Character, Swift.Array&lt;VK.User&gt;&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvrassadin/Xcode/GeekBrains_VK/VK/VK/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D - 349396c1e92d3ddb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FriendsViewController.sortedFriends.setter : Swift.Dictionary&lt;Swift.Character, Swift.Array&lt;VK.User&gt;&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvrassadin/Xcode/GeekBrains_VK/VK/VK/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D - 489fbadcdf14a48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FriendsViewController.sortedFriends.modify : Swift.Dictionary&lt;Swift.Character, Swift.Array&lt;VK.User&gt;&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvrassadin/Xcode/GeekBrains_VK/VK/VK/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D - 71cba85c60cb8a8d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FriendsViewController.sortedFriends.modify : Swift.Dictionary&lt;Swift.Character, Swift.Array&lt;VK.User&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvrassadin/Xcode/GeekBrains_VK/VK/VK/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D - 219f72474343e50"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FriendsViewController.init(style: __C.UITableViewStyle) -&gt; VK.FriendsViewController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvrassadin/Xcode/GeekBrains_VK/VK/VK/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "3616">
+               </Location>
+               <Location
+                  uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D - a6329c5d5ad682d2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FriendsViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; VK.FriendsViewController"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvrassadin/Xcode/GeekBrains_VK/VK/VK/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "3640">
+               </Location>
+               <Location
+                  uuid = "4851EFE6-16D6-4033-A99C-D6898BF29B7D - 5eb23885b363108e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "VK.FriendsViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;VK.FriendsViewController&gt;"
+                  moduleName = "VK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/dvrassadin/Xcode/GeekBrains_VK/VK/VK/Friends/FriendsViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "3616">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
