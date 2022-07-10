@@ -12,13 +12,19 @@ class FriendsViewCell: UITableViewCell {
     @IBOutlet weak var friendName: UILabel!
     @IBOutlet weak var avatarWithShadow: AvatarView!
     
-    
     override func awakeFromNib() {
-        super.awakeFromNib()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        tap.numberOfTapsRequired = 1
+        avatarWithShadow.addGestureRecognizer(tap)
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    @objc func handleTap(_: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 2,
+                       delay: 0,
+                       usingSpringWithDamping: 1,
+                       initialSpringVelocity: -20) {
+            self.avatarWithShadow.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
+            self.avatarWithShadow.transform = .identity
+        }
     }
-
 }

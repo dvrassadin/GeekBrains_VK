@@ -33,13 +33,18 @@ class PhotosViewCell: UICollectionViewCell {
             likeControl.likeImage.tintColor = .red
             likeControl.likeCount += 1
             likeControl.likeCounter.text = String(likeControl.likeCount)
+            UIView.transition(with: self.likeControl.likeCounter, duration: 0.5, options: .transitionFlipFromTop) {
+                self.likeControl.likeCounter.textColor = .red
+            }
 
         } else {
             likeControl.likeImage.image = UIImage(systemName: "heart")
             likeControl.likeImage.tintColor = .black
             likeControl.likeCount -= 1
             likeControl.likeCounter.text = String(likeControl.likeCount)
-
+            UIView.transition(with: self.likeControl.likeCounter, duration: 0.5, options: .transitionFlipFromBottom) {
+                self.likeControl.likeCounter.textColor = .black
+            }
         }
     }
 }

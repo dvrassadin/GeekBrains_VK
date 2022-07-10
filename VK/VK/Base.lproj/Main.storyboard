@@ -56,7 +56,6 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Sign in"/>
                                         <connections>
                                             <action selector="signInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xJh-GK-36b"/>
-                                            <segue destination="8I8-3Y-wR8" kind="presentation" modalPresentationStyle="fullScreen" id="Grh-P5-38l"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VK_Full_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6UP-TP-V9a">
@@ -66,15 +65,55 @@
                                             <constraint firstAttribute="height" constant="82" id="xzM-s6-FvP"/>
                                         </constraints>
                                     </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ozQ-NS-cpE">
+                                        <rect key="frame" x="74.5" y="81" width="265" height="82"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BXD-eb-azD">
+                                                <rect key="frame" x="112.5" y="21" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="7DH-i8-G7B"/>
+                                                    <constraint firstAttribute="width" secondItem="BXD-eb-azD" secondAttribute="height" multiplier="1:1" id="g5s-dQ-TC5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcf-a2-4u1">
+                                                <rect key="frame" x="197.5" y="21" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Jcf-a2-4u1" secondAttribute="height" multiplier="1:1" id="iF8-4B-yZ0"/>
+                                                    <constraint firstAttribute="height" constant="40" id="sIl-WK-hof"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbg-43-vWt">
+                                                <rect key="frame" x="27.5" y="21" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="ITd-ks-gQX"/>
+                                                    <constraint firstAttribute="width" secondItem="jbg-43-vWt" secondAttribute="height" multiplier="1:1" id="abL-wB-x3m"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Jcf-a2-4u1" firstAttribute="leading" secondItem="BXD-eb-azD" secondAttribute="trailing" constant="45" id="4fG-Ji-ehI"/>
+                                            <constraint firstItem="BXD-eb-azD" firstAttribute="leading" secondItem="jbg-43-vWt" secondAttribute="trailing" constant="45" id="C4d-L8-dIs"/>
+                                            <constraint firstItem="BXD-eb-azD" firstAttribute="centerY" secondItem="ozQ-NS-cpE" secondAttribute="centerY" id="I4D-Sp-rJ8"/>
+                                            <constraint firstItem="BXD-eb-azD" firstAttribute="centerX" secondItem="ozQ-NS-cpE" secondAttribute="centerX" id="JmV-z3-e9U"/>
+                                            <constraint firstItem="BXD-eb-azD" firstAttribute="centerY" secondItem="ozQ-NS-cpE" secondAttribute="centerY" id="NeC-nb-YdN"/>
+                                            <constraint firstAttribute="width" constant="265" id="glj-lr-bpF"/>
+                                            <constraint firstAttribute="height" constant="82" id="lQs-8G-qgo"/>
+                                            <constraint firstItem="Jcf-a2-4u1" firstAttribute="centerY" secondItem="ozQ-NS-cpE" secondAttribute="centerY" id="v2e-dy-q0d"/>
+                                            <constraint firstItem="jbg-43-vWt" firstAttribute="centerY" secondItem="ozQ-NS-cpE" secondAttribute="centerY" id="vXK-4q-hWr"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="iza-vA-dL0" firstAttribute="centerX" secondItem="iSe-Cn-qAe" secondAttribute="centerX" id="3N3-jV-5Gd"/>
                                     <constraint firstItem="oBi-HK-VyE" firstAttribute="centerX" secondItem="iSe-Cn-qAe" secondAttribute="centerX" id="4Rf-Zo-OGC"/>
+                                    <constraint firstItem="ozQ-NS-cpE" firstAttribute="top" secondItem="iSe-Cn-qAe" secondAttribute="top" constant="81" id="Cnu-gX-dKg"/>
                                     <constraint firstItem="6UP-TP-V9a" firstAttribute="centerX" secondItem="iSe-Cn-qAe" secondAttribute="centerX" id="FM2-cH-ceN"/>
                                     <constraint firstItem="glp-DQ-X6B" firstAttribute="top" secondItem="oBi-HK-VyE" secondAttribute="bottom" constant="23" id="NHv-9d-76c"/>
+                                    <constraint firstItem="ozQ-NS-cpE" firstAttribute="centerX" secondItem="iSe-Cn-qAe" secondAttribute="centerX" id="Qkg-ej-2p0"/>
                                     <constraint firstItem="iza-vA-dL0" firstAttribute="top" secondItem="S1n-GE-Why" secondAttribute="bottom" constant="72" id="Uyg-fx-iVy"/>
                                     <constraint firstAttribute="trailing" secondItem="6UP-TP-V9a" secondAttribute="trailing" constant="74.5" id="WDY-gh-6U2"/>
                                     <constraint firstItem="S1n-GE-Why" firstAttribute="top" secondItem="pqq-F0-C1K" secondAttribute="bottom" constant="23" id="dfL-cx-aPi"/>
+                                    <constraint firstAttribute="trailing" secondItem="ozQ-NS-cpE" secondAttribute="trailing" constant="74.5" id="dpd-Ye-36H"/>
                                     <constraint firstItem="6UP-TP-V9a" firstAttribute="top" secondItem="iSe-Cn-qAe" secondAttribute="top" constant="81" id="fhQ-3I-MBg"/>
                                     <constraint firstItem="pqq-F0-C1K" firstAttribute="top" secondItem="glp-DQ-X6B" secondAttribute="bottom" constant="41" id="hOw-Kq-xxF"/>
                                     <constraint firstItem="glp-DQ-X6B" firstAttribute="centerX" secondItem="iSe-Cn-qAe" secondAttribute="centerX" id="hv0-fY-egA"/>
@@ -98,14 +137,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="hyC-Ez-VMS"/>
                     <connections>
+                        <outlet property="animationFirstDot" destination="jbg-43-vWt" id="exx-pv-3u9"/>
+                        <outlet property="animationSecondDot" destination="BXD-eb-azD" id="M6X-ab-7f3"/>
+                        <outlet property="animationThirdDot" destination="Jcf-a2-4u1" id="wON-Sa-oJF"/>
+                        <outlet property="animationView" destination="ozQ-NS-cpE" id="dFZ-2X-LWc"/>
                         <outlet property="passwordTextField" destination="S1n-GE-Why" id="HlT-HT-G36"/>
                         <outlet property="scrollView" destination="iSe-Cn-qAe" id="Oab-GC-C5R"/>
                         <outlet property="usernameTextField" destination="glp-DQ-X6B" id="Y0k-0j-jEl"/>
+                        <segue destination="8I8-3Y-wR8" kind="presentation" identifier="SignIn" modalPresentationStyle="fullScreen" id="8lf-Sz-vOB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="899" y="137"/>
+            <point key="canvasLocation" x="898.55072463768124" y="136.60714285714286"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="y27-wX-Jzy">

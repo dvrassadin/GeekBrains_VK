@@ -61,6 +61,7 @@ class FriendsViewController: UITableViewController {
         self.sortedFriends = sort(friends: friends)
 
     }
+    
 
     // MARK: - Table view data source
 
@@ -106,4 +107,7 @@ class FriendsViewController: UITableViewController {
             destinationVC.title = selectedName
         }
     }
+    
+    
+    
 }

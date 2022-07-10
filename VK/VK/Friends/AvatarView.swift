@@ -30,5 +30,5 @@ class AvatarView: UIView {
     override func layoutSubviews() {
         avatarShadow.layer.cornerRadius = bounds.height / 2
         avatarImage.layer.cornerRadius = bounds.height / 2
-    }
+    }       
 }
