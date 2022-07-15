@@ -8,16 +8,18 @@
 import UIKit
 
 class LoginFormController: UIViewController {
+    @IBOutlet var scrollView: UIScrollView!
     @IBOutlet var usernameTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     @IBOutlet weak var animationView: UIView!
     @IBOutlet weak var animationFirstDot: UIView!
     @IBOutlet weak var animationSecondDot: UIView!
     @IBOutlet weak var animationThirdDot: UIView!
+    
     @IBAction func signInButton(_ sender: Any) {
         signInAnimation()
         if checkUserData() {
-            Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { timer in
+            Timer.scheduledTimer(withTimeInterval: 1, repeats: false) { timer in
                 self.stopSignInAnimation()
                 self.performSegue(withIdentifier: "SignIn", sender: nil)
             }
@@ -64,7 +66,7 @@ class LoginFormController: UIViewController {
         self.passwordTextField.text = ""
     }
     
-    @IBOutlet var scrollView: UIScrollView!
+
     
     @objc func hideKeyboard() {
         self.scrollView?.endEditing(true)

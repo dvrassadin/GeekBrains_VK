@@ -336,6 +336,7 @@
                                     <outlet property="conteiner" destination="prP-x4-z03" id="GcI-gg-sUq"/>
                                     <outlet property="likeControl" destination="5eh-c0-1ow" id="cUx-1O-9Cv"/>
                                     <outlet property="photo" destination="8gT-fq-sOl" id="eKh-58-DPP"/>
+                                    <segue destination="MK1-ub-PX2" kind="show" identifier="bigPhoto" id="wlR-io-NQC"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -349,6 +350,61 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nB9-KR-KlS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4241" y="-546"/>
+        </scene>
+        <!--Big Photo View Controller-->
+        <scene sceneID="JVn-bl-7rc">
+            <objects>
+                <viewController id="MK1-ub-PX2" customClass="BigPhotoViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQE-de-zSX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ci-wu-QmT">
+                                <rect key="frame" x="0.0" y="88" width="414" height="718"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rBQ-ns-A9g">
+                                <rect key="frame" x="0.0" y="88" width="414" height="718"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="bsy-eK-aEs" appends="YES" id="u7M-3J-wk2"/>
+                                    <outletCollection property="gestureRecognizers" destination="hRL-fK-TCB" appends="YES" id="KTf-3K-bRL"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="G0P-P8-beT"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="5ci-wu-QmT" secondAttribute="bottom" constant="90" id="6pg-bo-Wap"/>
+                            <constraint firstItem="5ci-wu-QmT" firstAttribute="top" secondItem="G0P-P8-beT" secondAttribute="top" id="76d-5F-cVe"/>
+                            <constraint firstItem="rBQ-ns-A9g" firstAttribute="top" secondItem="G0P-P8-beT" secondAttribute="top" id="Fjc-IX-gpb"/>
+                            <constraint firstItem="rBQ-ns-A9g" firstAttribute="trailing" secondItem="G0P-P8-beT" secondAttribute="trailing" id="Xkr-eS-uZQ"/>
+                            <constraint firstItem="5ci-wu-QmT" firstAttribute="leading" secondItem="G0P-P8-beT" secondAttribute="leading" id="a3A-xc-h5o"/>
+                            <constraint firstItem="rBQ-ns-A9g" firstAttribute="leading" secondItem="G0P-P8-beT" secondAttribute="leading" id="bTO-E0-t6b"/>
+                            <constraint firstAttribute="bottom" secondItem="rBQ-ns-A9g" secondAttribute="bottom" constant="90" id="xEj-DC-RNa"/>
+                            <constraint firstAttribute="trailing" secondItem="5ci-wu-QmT" secondAttribute="trailing" id="zXU-ck-2sd"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="mtq-lx-rTq"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="additionalBigPhoto" destination="5ci-wu-QmT" id="g1H-eJ-Fjp"/>
+                        <outlet property="bigPhoto" destination="rBQ-ns-A9g" id="2kD-ar-F9y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y9R-eX-e9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="bsy-eK-aEs" userLabel="Right Swipe">
+                    <connections>
+                        <action selector="rightSwipe:" destination="MK1-ub-PX2" id="sO6-g6-fWI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="hRL-fK-TCB" userLabel="Left Swipe">
+                    <connections>
+                        <action selector="leftSwipe:" destination="MK1-ub-PX2" id="cfE-vF-KH9"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="5053.6231884057979" y="-546.42857142857144"/>
         </scene>
         <!--Friends-->
         <scene sceneID="iXp-bd-uBh">

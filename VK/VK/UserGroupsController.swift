@@ -69,7 +69,7 @@ class UserGroupsController: UITableViewController, UISearchBarDelegate {
         }    
     }
     
-    //MARK: Search Bar Config
+    //MARK: - Search Bar Config
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         filteredUserGroups = []

@@ -1,0 +1,45 @@
+
+/* Class = "UITabBarItem"; title = "Groups"; ObjectID = "1SM-Do-oTw"; */
+"1SM-Do-oTw.title" = "Groups";
+
+/* Class = "UITabBarItem"; title = "News"; ObjectID = "4AY-De-SSP"; */
+"4AY-De-SSP.title" = "News";
+
+/* Class = "UINavigationItem"; title = "Groups"; ObjectID = "9mU-B9-ade"; */
+"9mU-B9-ade.title" = "Groups";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Eqn-7V-jF4"; */
+"Eqn-7V-jF4.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Friends"; ObjectID = "MVE-ea-VRl"; */
+"MVE-ea-VRl.title" = "Friends";
+
+/* Class = "UINavigationItem"; title = "News"; ObjectID = "MwM-Wt-UU1"; */
+"MwM-Wt-UU1.title" = "News";
+
+/* Class = "UITabBarItem"; title = "Friends"; ObjectID = "g1b-qA-U83"; */
+"g1b-qA-U83.title" = "Friends";
+
+/* Class = "UIButton"; configuration.title = "Sign in"; ObjectID = "iza-vA-dL0"; */
+"iza-vA-dL0.configuration.title" = "Sign in";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kTm-em-m6M"; */
+"kTm-em-m6M.text" = "Label";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "oBi-HK-VyE"; */
+"oBi-HK-VyE.text" = "Username";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "pqq-F0-C1K"; */
+"pqq-F0-C1K.text" = "Password";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "rP0-uV-ax1"; */
+"rP0-uV-ax1.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "uSO-yR-qN0"; */
+"uSO-yR-qN0.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "wLr-DK-D70"; */
+"wLr-DK-D70.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "x3Z-fb-VrZ"; */
+"x3Z-fb-VrZ.normalTitle" = "Button";
