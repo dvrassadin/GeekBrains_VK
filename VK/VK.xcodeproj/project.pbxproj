@@ -11,6 +11,7 @@
 		511DCD9A2871DF72000655F5 /* NewsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511DCD992871DF72000655F5 /* NewsViewCell.swift */; };
 		511DCD9C2871E2B8000655F5 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511DCD9B2871E2B8000655F5 /* News.swift */; };
 		511DCD9E287C1C30000655F5 /* BigPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511DCD9D287C1C30000655F5 /* BigPhotoViewController.swift */; };
+		511DCDA42882B802000655F5 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511DCDA32882B802000655F5 /* CustomNavigationController.swift */; };
 		5157339B286374D00073F898 /* RecommendedGroupsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157339A286374D00073F898 /* RecommendedGroupsController.swift */; };
 		5157339D286378AD0073F898 /* RecommendedGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157339C286378AD0073F898 /* RecommendedGroupsCell.swift */; };
 		515733A42864CA850073F898 /* UserGroupsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515733A32864CA850073F898 /* UserGroupsCell.swift */; };
@@ -36,6 +37,7 @@
 		511DCD992871DF72000655F5 /* NewsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewCell.swift; sourceTree = SOURCE_ROOT; };
 		511DCD9B2871E2B8000655F5 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		511DCD9D287C1C30000655F5 /* BigPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BigPhotoViewController.swift; path = VK/BigPhotoViewController.swift; sourceTree = SOURCE_ROOT; };
+		511DCDA32882B802000655F5 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = SOURCE_ROOT; };
 		5157339A286374D00073F898 /* RecommendedGroupsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGroupsController.swift; sourceTree = "<group>"; };
 		5157339C286378AD0073F898 /* RecommendedGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGroupsCell.swift; sourceTree = "<group>"; };
 		515733A32864CA850073F898 /* UserGroupsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGroupsCell.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		51C017C9285DD3140004EAA8 /* VK */ = {
 			isa = PBXGroup;
 			children = (
+				511DCDA32882B802000655F5 /* CustomNavigationController.swift */,
 				515733A728670D900073F898 /* Model */,
 				51573390286372670073F898 /* Friends */,
 				51573397286373BE0073F898 /* Groups */,
@@ -268,6 +271,7 @@
 				511DCD9C2871E2B8000655F5 /* News.swift in Sources */,
 				515733B428673F830073F898 /* PhotosViewController.swift in Sources */,
 				511DCD962871D1FE000655F5 /* NewsTableViewController.swift in Sources */,
+				511DCDA42882B802000655F5 /* CustomNavigationController.swift in Sources */,
 				515733A62864CAA40073F898 /* UserGroupsController.swift in Sources */,
 				515733B628673F990073F898 /* PhotosViewCell.swift in Sources */,
 				515733AF2867348F0073F898 /* FriendsViewCell.swift in Sources */,

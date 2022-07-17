@@ -409,7 +409,7 @@
         <!--Friends-->
         <scene sceneID="iXp-bd-uBh">
             <objects>
-                <navigationController id="k64-vm-2vq" sceneMemberID="viewController">
+                <navigationController id="k64-vm-2vq" customClass="CustomNavigationController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Friends" image="person.3.fill" catalog="system" selectedImage="person.3" id="g1b-qA-U83"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vc9-QO-LfS">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -598,7 +598,7 @@
         <!--News-->
         <scene sceneID="xwO-4J-wP7">
             <objects>
-                <navigationController id="7zk-CV-BNx" sceneMemberID="viewController">
+                <navigationController id="7zk-CV-BNx" customClass="CustomNavigationController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="News" image="newspaper.fill" catalog="system" selectedImage="newspaper" id="4AY-De-SSP"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6Lz-RD-5Ce">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -681,7 +681,7 @@
         <!--Groups-->
         <scene sceneID="Ibc-QF-5Ed">
             <objects>
-                <navigationController id="Ih2-KM-abD" sceneMemberID="viewController">
+                <navigationController id="Ih2-KM-abD" customClass="CustomNavigationController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Groups" image="person.2.circle.fill" catalog="system" selectedImage="person.2.circle" id="1SM-Do-oTw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HcF-XE-RyU">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
