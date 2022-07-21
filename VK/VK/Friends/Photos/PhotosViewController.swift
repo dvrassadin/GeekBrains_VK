@@ -49,3 +49,13 @@ class PhotosViewController: UICollectionViewController {
         return cell
     }
 }
+
+extension PhotosViewController: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return CustomPushAnimator()
+    }
+    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return CustomPopAnimator()
+        
+    }
+}
